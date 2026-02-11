@@ -4,21 +4,25 @@ Predicting credit eligibility using unsupervised learning on borrower data.
 
 ## Dataset
 - **Source:** `cs-training.csv`  
-- Features include age, income, debt ratio, late payments, and dependents.
+- Features: age, income, debt ratio, late payments, dependents.
 
 ## Approach
 - Data cleaning and normalization (`MinMaxScaler`)  
 - **Models:** K-Means and Agglomerative Hierarchical Clustering (CAH)  
-- Data segmented into 3 clusters to uncover patterns:
+- Segmented data into 3 clusters:
   - Older adults → higher income & debt ratio  
   - Younger adults → lower income & debt ratio  
 
 ## Evaluation
 - **Silhouette Score:** K-Means: 0.398, CAH: 0.787  
-- High train/test accuracy for K-Means (~99.9%)  
+- K-Means train/test accuracy: ~99.9%  
 
 ## Visualizations
-- Heatmaps, boxplots, and scatterplots of clusters  
+- Heatmaps, boxplots, scatterplots of clusters  
+
+## Files
+- `Credit_Eligibility_Prediction.ipynb` – Notebook with full implementation  
+- `report.pdf` – Detailed project report  
 
 ## Run Notebook
 ```bash
